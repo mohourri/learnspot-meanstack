@@ -6,6 +6,8 @@ import { AllCoursesComponent } from './component/all-courses/all-courses.compone
 import { HeaderComponent } from './component/header/header.component';
 import { CoursCardComponent } from './component/cours-card/cours-card.component';
 import { ButtonComponent } from './component/button/button.component';
+import { LoginFormComponent } from './component/login-form/login-form.component';
+import { AddCoursFormComponent } from './component/add-cours-form/add-cours-form.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { ButtonComponent } from './component/button/button.component';
     HeaderComponent,
     AllCoursesComponent,
     CoursCardComponent,
-    ButtonComponent
+    ButtonComponent,
+    LoginFormComponent,
+    AddCoursFormComponent
   ],
   imports: [
     BrowserModule

@@ -1,8 +1,9 @@
-<div class="card h-100" style="width: 15rem;">
+<div class="card" style="width: 15rem;">
     <img class="card-img-top" src="https://blog.launchcode.org/hs-fs/hubfs/Imported_Blog_Media/Computer-Science-Education-Week_Blog-01.png?width=1250&name=Computer-Science-Education-Week_Blog-01.png" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">{{cours.title}}</h5>
-      <p class="card-text">{{cours.author}}</p>
+      <p class="card-text">{{cours.category}}</p>
+      <p class="card-text">By :<i> {{cours.author.toUpperCase()}}</i></p>
       <a href="#" class="btn btn-primary">Take the Cours</a>
     </div>
   </div>
