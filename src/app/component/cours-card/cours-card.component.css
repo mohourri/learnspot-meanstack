@@ -1,10 +1,15 @@
 .card{
-
-    max-height: 350px;
-    margin: 10px;
+    width: 14rem;
+    margin: 7px;
     margin-top: 15px;
-    box-shadow: 2px 3px 4px rgba(128, 128, 128, 0.297);
 }
 .card-text{
     color: rgb(112, 112, 112);
+}
+
+.btn{
+    border-radius:100px;
+    box-shadow: 1px 1px 4px rgba(104, 104, 104, 0.525);
+    
+
 }

@@ -1,9 +1,10 @@
-<div class="card" style="width: 15rem;">
+<div class="card" >
     <img class="card-img-top" src="https://blog.launchcode.org/hs-fs/hubfs/Imported_Blog_Media/Computer-Science-Education-Week_Blog-01.png?width=1250&name=Computer-Science-Education-Week_Blog-01.png" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">{{cours.title}}</h5>
-      <p class="card-text">{{cours.category}}</p>
-      <p class="card-text">By :<i> {{cours.author.toUpperCase()}}</i></p>
-      <a href="#" class="btn btn-primary">Take the Cours</a>
+      <h5 class="card-title">{{course.title}}</h5>
+      <p class="card-text">{{course.category}}</p>
+      <p class="card-text">By :<i> {{course.author.toUpperCase()}}</i></p>
+      <a [routerLink]="['/course', course.id]">{{ course.title }}</a>
+      <app-button [routerLink]="['/course', course]" class="btn btn-primary" color="blue" text="View the course" color="blue" (click)="onClick(course)">Take the Cours</app-button>
     </div>
   </div>

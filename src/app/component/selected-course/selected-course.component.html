@@ -1,0 +1,39 @@
+<!-- Page header -->
+<div class="container-fluid bg-light">
+    <div class="container py-5">
+      <h1 class="display-4">{{ course.title }}</h1>
+      <p class="lead">{{ course.description }}</p>
+      <p>Author: {{ course.author }}</p>
+      <p>Duration: {{ course.duration }} hours</p>
+      <p><i class="far fa-eye"></i> {{ course.views }} viewer</p>
+    </div>
+  </div>
+  
+  <!-- Main content -->
+  <div class="container py-5">
+    <div class="row">
+      <!-- Course content -->
+      <div class="col-lg-8">
+        <div class=" mb-5">
+          <!-- Course chapters -->
+          <div class="mt-5 " *ngFor="let chapter of course.chapters">
+            <h2>{{ chapter.title }}</h2>
+            <hr>
+            <div [innerHTML]="chapter.content"></div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Sidebar -->
+      <div class="col-lg-3">
+        <div class="mb-5">
+          <h4 class="mb-4">Course Information</h4>
+          <ul class="list-unstyled">
+            <li>Author: {{ course.author }}</li>
+            <li>Duration: {{ course.duration }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  

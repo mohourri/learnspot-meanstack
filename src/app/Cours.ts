@@ -1,8 +1,11 @@
+import {Chapter} from './Chapter'
 export interface Cours {
     id?: number;
+    description: string;
     title: string;
     category: string;
     duration: number;
     author: string;
-    chapters: number
+    views: number,
+    chapters: Array<Chapter>
 }

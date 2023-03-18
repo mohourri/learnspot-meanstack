@@ -1,42 +1,138 @@
-{"courses" :[
+{
+  "courses": [
     {
-        "id":1, 
-        "title":"Java for beginners",
-        "category":"Software engineering",
-        "duration":10,
-        "author":"Hourri Mohamed",
-        "chapters":4
+      "id": 1,
+      "title": "Java for beginners",
+      "description":"this is the most amazing course ever! I promise you gonna enjoy it so hard !",
+      "category": "Software engineering",
+      "duration": 10,
+      "author": "Hourri Mohamed",
+      "chapters": [
+        {"title":"title 1","content":"1 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 2","content":"2 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 3","content":"3 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 4","content":"4 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."}
+      ]
     },
     {
-        "id":2, 
-        "title":"Java Advanced",
-        "category":"Software engineering",
-        "duration":20 ,
-        "author":"Qassi Mohamed",
-        "chapters":3
+      "id": 2,
+      "title": "Java Advanced",
+      "description":"this is the most amazing course ever! I promise you gonna enjoy it so hard !",
+      "category": "Software engineering",
+      "duration": 20,
+      "author": "Qassi Mohamed",
+      "views": 10000,
+      "chapters": [
+        {"title":"title 1","content":"1 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 2","content":"2 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 3","content":"3 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 4","content":"4 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."}
+      ]
     },
     {
-        "id":3, 
-        "title":"OOP in C#",
-        "category":"Software engineering",
-        "duration":40 ,
-        "author":"Khalqi Adil",
-        "chapters":6
+      "id": 3,
+      "title": "OOP in C#",
+      "description":"this is the most amazing course ever! I promise you gonna enjoy it so hard !",
+      "category": "Software engineering",
+      "duration": 40,
+      "author": "Khalqi Adil",
+      "views": 10000,
+      "chapters": [
+        {"title":"title 1","content":"1 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 2","content":"2 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 3","content":"3 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 4","content":"4 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."}
+      ]
     },
     {
-        "id":4, 
-        "title":"Machine Learning and neural networks",
-        "category":"Software engineering",
-        "duration":40,
-        "author":"Hajji Tariq",
-        "chapters":5
+      "id": 4,
+      "title": "Machine Learning and neural networks",
+      "description":"this is the most amazing course ever! I promise you gonna enjoy it so hard !",
+      "category": "Software engineering",
+      "duration": 40,
+      "author": "Hajji Tariq",
+      "views": 10000,
+      "chapters": [
+        {"title":"title 1","content":"1 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 2","content":"2 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 3","content":"3 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 4","content":"4 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."}
+      ]
     },
     {
-        "id":5, 
-        "title":"Angular from Scratch",
-        "category":"Software engineering",
-        "duration":20,
-        "author":"Boukil Naoual",
-        "chapters":4
+      "id": 5,
+      "title": "Angular from Scratch",
+      "description":"this is the most amazing course ever! I promise you gonna enjoy it so hard !",
+      "category": "Software engineering",
+      "duration": 20,
+      "author": "Boukil Naoual",
+      "views": 10000,
+      "chapters": [
+        {"title":"title 1","content":"1 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 2","content":"2 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 3","content":"3 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 4","content":"4 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."}
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Python for Machibe learning",
+      "description":"this is the most amazing course ever! I promise you gonna enjoy it so hard !",
+      "category": "AI Ingineering",
+      "duration": 30,
+      "author": "Andrei YU",
+      "views": 10000,
+      "chapters": [
+        {"title":"title 1","content":"1 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 2","content":"2 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 3","content":"3 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 4","content":"4 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."}
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Python for Machibe learning",
+      "description":"this is the most amazing course ever! I promise you gonna enjoy it so hard !",
+      "category": "AI Ingineering",
+      "duration": 30,
+      "author": "Andrei YU",
+      "views": 10000,
+      "chapters": [
+        {"title":"title 1","content":"1 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 2","content":"2 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 3","content":"3 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 4","content":"4 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."}
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Python for Machibe learning",
+      "description":"this is the most amazing course ever! I promise you gonna enjoy it so hard !",
+      "category": "AI Ingineering",
+      "duration": 30,
+      "author": "Andrei YU",
+      "views": 10000,
+      "chapters": [
+        {"title":"title 1","content":"1 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 2","content":"2 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 3","content":"3 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 4","content":"4 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."}
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Python for Machibe learning",
+      "description":"this is the most amazing course ever! I promise you gonna enjoy it so hard !",
+      "category": "AI Ingineering",
+      "duration": 30,
+      "author": "Andrei YU",
+      "views": 10000,
+      "chapters": [
+        {"title":"title 1","content":"1 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 2","content":"2 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 3","content":"3 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."},
+        {"title":"title 4","content":"4 The sun beat down on the desert sands, casting long shadows behind the lone traveler as he trudged across the dunes. Sweat beaded on his forehead and his throat was parched from the hot, dry air. As he walked, he couldn't help but wonder if he was on the right path, or if he was hopelessly lost. In the distance, he could see the faint outline of a mountain range, and he wondered if that was where he was headed. But for now, all he could do was keep moving forward, one step at a time, and hope that he would find his way."}
+      ]
     }
-]}
+  ]
+}
