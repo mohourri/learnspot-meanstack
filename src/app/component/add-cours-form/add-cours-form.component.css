@@ -1,0 +1,29 @@
+button{
+    margin:5px;
+    display: block;
+    float: right;
+}
+.form-group{
+    margin-bottom: 10px;
+}
+.chapter-block {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+label{
+margin-right: 15px;
+}
+.deleteIcon{
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    color: red;
+}
+.addChap{
+    color:rgb(45, 84, 255);
+    text-decoration: none;
+}
+
+  

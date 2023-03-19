@@ -1,4 +1,7 @@
 <!-- Page header -->
+<ng-container *ngIf="!course">
+  <app-spinner></app-spinner>
+</ng-container>
 <div class="container-fluid bg-light">
     <div class="container py-5">
       <h1 class="display-4">{{ course.title }}</h1>

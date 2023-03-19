@@ -10,12 +10,18 @@ import { HeaderComponent } from './component/header/header.component';
 import { CoursCardComponent } from './component/cours-card/cours-card.component';
 import { ButtonComponent } from './component/button/button.component';
 import { LoginFormComponent } from './component/login-form/login-form.component';
-import { AddCoursFormComponent } from './component/add-cours-form/add-cours-form.component';
 import { SelectedCourseComponent } from './component/selected-course/selected-course.component';
+import { AdminDashboardComponent } from './component/admin-dashboard/admin-dashboard.component';
+import { AddCoursFormComponent } from './component/add-cours-form/add-cours-form.component';
+import { UpdateCourseFormComponent } from './component/update-course-form/update-course-form.component';
+import { SpinnerComponent } from './component/spinner/spinner.component';
 
 const appRoutes: Routes =[
   {path:'',component: AllCoursesComponent},
-  { path: 'course/:id', component: SelectedCourseComponent }
+  { path: 'course/:id', component: SelectedCourseComponent },
+  { path: 'admin', component: AdminDashboardComponent },
+  { path: 'courses/new_course', component: AddCoursFormComponent },
+  { path: 'course/update/:id', component: UpdateCourseFormComponent },
 ]
 
 @NgModule({
@@ -26,10 +32,14 @@ const appRoutes: Routes =[
     CoursCardComponent,
     ButtonComponent,
     LoginFormComponent,
+    SelectedCourseComponent,
+    AdminDashboardComponent,
     AddCoursFormComponent,
-    SelectedCourseComponent
+    UpdateCourseFormComponent,
+    SpinnerComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     HttpClientModule,
     FormsModule,

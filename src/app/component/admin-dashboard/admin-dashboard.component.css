@@ -1,0 +1,16 @@
+tr{
+    cursor: pointer;
+}
+
+tr:hover{
+    background-color: rgb(167, 167, 167);
+}
+.btnadd{
+    float: right;    
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+table{
+}

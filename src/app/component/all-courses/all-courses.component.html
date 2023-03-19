@@ -1,10 +1,13 @@
 <div class="container mt-5">
+  <ng-container *ngIf="!courses">
+    <app-spinner></app-spinner>
+  </ng-container>
     <div class="row">
       <div class="col-md-8 mx-auto">
         <div class="row">
           <div class="col-md-4 mb-4" *ngFor="let course of courses">
             <div class="card h-100">
-              <img src="https://blog.launchcode.org/hs-fs/hubfs/Imported_Blog_Media/Computer-Science-Education-Week_Blog-01.png?width=1250&name=Computer-Science-Education-Week_Blog-01.png" class="card-img-top" alt="...">
+              <img src="https://www.springboard.com/blog/wp-content/uploads/2021/11/Refine-Your-Coding-Skills-1-scaled.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">{{ course.title }}</h5>
                 <p class="card-text">{{ course.description }}</p>

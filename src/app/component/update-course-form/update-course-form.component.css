@@ -1,0 +1,11 @@
+.form-group{
+    margin-bottom: 10px;
+}
+
+textarea{
+    height: 10em;
+}
+
+button{
+    margin: 5px;
+}
