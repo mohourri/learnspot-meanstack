@@ -1,4 +1,4 @@
-<!-- Page header -->
+
 <ng-container *ngIf="!course">
   <app-spinner></app-spinner>
 </ng-container>
@@ -12,13 +12,13 @@
     </div>
   </div>
   
-  <!-- Main content -->
+  
   <div class="container py-5">
     <div class="row">
-      <!-- Course content -->
+      
       <div class="col-lg-8">
         <div class=" mb-5">
-          <!-- Course chapters -->
+
           <div class="mt-5 " *ngFor="let chapter of course.chapters">
             <h2>{{ chapter.title }}</h2>
             <hr>

@@ -1,6 +1,7 @@
 .contact {
     padding: 50px 0;
     text-align: center;
+    margin: auto;
   }
   
   .contact h1 {
@@ -36,6 +37,7 @@
   
   .btn-primary {
     display: inline-block;
+    width: 200px;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;

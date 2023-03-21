@@ -188,30 +188,6 @@
       "duration": 30,
       "author": "Andrei YU",
       "chapters": 5
-    },
-    {
-      "firstName": "Mohamed",
-      "lastName": "Horri",
-      "email": "hourri_moh@upf.ac.ma",
-      "gender": "male",
-      "password": "med123",
-      "id": 70
-    },
-    {
-      "firstName": "Mohamed",
-      "lastName": "Horri",
-      "email": "hourri_moh@upf.ac.ma",
-      "gender": "male",
-      "password": "1234",
-      "id": 71
-    },
-    {
-      "firstName": "Mohamed",
-      "lastName": "Horri",
-      "email": "hourri_moh@upf.ac.ma",
-      "gender": "male",
-      "password": "ooooo",
-      "id": 72
     }
   ],
   "users": [
@@ -230,6 +206,14 @@
       "gender": "male",
       "password": "10000",
       "id": 2
+    },
+    {
+      "firstName": "Mohamed",
+      "lastName": "Harhourri",
+      "email": "muhammadhourri@gmalilcom",
+      "gender": "male",
+      "password": "YounessMAdouniTamel",
+      "id": 3
     }
   ]
 }

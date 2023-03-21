@@ -21,4 +21,5 @@ export class SelectedCourseComponent implements OnInit {
       this.course = cours;
     });
   }
+  
 }
