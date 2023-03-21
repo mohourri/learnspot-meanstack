@@ -47,20 +47,14 @@ export class AddCoursFormComponent {
       chapters: this.course.chapters
     };
   
-
-
-
-    if(this.course.title =="" || this.course.author =="" || this.course.category =="" || this.course.duration == 0){
-      return alert("Please fill all the starred fields before submitting :)");
-    }else{
       this.coursesService.insertCourse(newCourse)
         .subscribe(() => {
           alert("The Course has been added !");
           this.router.navigate(['/admin'], { relativeTo: this.route });
       });
-    }
-
-
+    
       
   }
+
+  
 }

@@ -2,12 +2,14 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Cours } from '../Cours';
+import { User } from '../User';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CoursesServiceService {
   private url : string = 'http://localhost:5000/courses'
+  private url2 : string = 'http://localhost:5000/users'
   constructor(private http:HttpClient) { }
 
   getCourses(): Observable<Cours[]> {
@@ -28,9 +30,16 @@ export class CoursesServiceService {
     return this.http.post<Cours>(this.url, course);
   }
 
+
+
   deleteCourse(id: number): Observable<Cours> {
     const url = `${this.url}/${id}`;
     return this.http.delete<Cours>(url);
   }
+  
+  addUser(user: User): Observable<User> {
+    return this.http.post<User>(this.url2, user);
+  }
+
 
 }

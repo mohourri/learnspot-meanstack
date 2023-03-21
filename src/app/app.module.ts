@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {RouterModule, Routes} from '@angular/router';
-
 import { AppComponent } from './app.component';
 import { AllCoursesComponent } from './component/all-courses/all-courses.component';
 import { HeaderComponent } from './component/header/header.component';
@@ -15,13 +14,20 @@ import { AdminDashboardComponent } from './component/admin-dashboard/admin-dashb
 import { AddCoursFormComponent } from './component/add-cours-form/add-cours-form.component';
 import { UpdateCourseFormComponent } from './component/update-course-form/update-course-form.component';
 import { SpinnerComponent } from './component/spinner/spinner.component';
+import { RegisterComponent } from './component/register/register.component';
+import { AboutComponent } from './component/about/about.component';
+import { ContactComponent } from './component/contact/contact.component';
 
 const appRoutes: Routes =[
   {path:'',component: AllCoursesComponent},
+  { path: 'login', component: LoginFormComponent },
+  { path: 'register', component: RegisterComponent },
   { path: 'course/:id', component: SelectedCourseComponent },
   { path: 'admin', component: AdminDashboardComponent },
   { path: 'courses/new_course', component: AddCoursFormComponent },
   { path: 'course/update/:id', component: UpdateCourseFormComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'contact', component:  ContactComponent},
 ]
 
 @NgModule({
@@ -36,13 +42,18 @@ const appRoutes: Routes =[
     AdminDashboardComponent,
     AddCoursFormComponent,
     UpdateCourseFormComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    LoginFormComponent,
+    RegisterComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     FormsModule,
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(appRoutes,{enableTracing:true})
   ],
   providers: [],

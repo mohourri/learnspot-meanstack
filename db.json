@@ -180,6 +180,56 @@
         }
       ],
       "id": 68
+    },
+    {
+      "id": 69,
+      "title": "Python for AI",
+      "category": "AI Ingineering",
+      "duration": 30,
+      "author": "Andrei YU",
+      "chapters": 5
+    },
+    {
+      "firstName": "Mohamed",
+      "lastName": "Horri",
+      "email": "hourri_moh@upf.ac.ma",
+      "gender": "male",
+      "password": "med123",
+      "id": 70
+    },
+    {
+      "firstName": "Mohamed",
+      "lastName": "Horri",
+      "email": "hourri_moh@upf.ac.ma",
+      "gender": "male",
+      "password": "1234",
+      "id": 71
+    },
+    {
+      "firstName": "Mohamed",
+      "lastName": "Horri",
+      "email": "hourri_moh@upf.ac.ma",
+      "gender": "male",
+      "password": "ooooo",
+      "id": 72
+    }
+  ],
+  "users": [
+    {
+      "firstName": "Mohamed",
+      "lastName": "Horri",
+      "email": "hourri_moh@upf.ac.ma",
+      "gender": "male",
+      "password": "",
+      "id": 1
+    },
+    {
+      "firstName": "Youness",
+      "lastName": "Hourri",
+      "email": "hourri_moh@upf.ac.ma",
+      "gender": "male",
+      "password": "10000",
+      "id": 2
     }
   ]
 }
