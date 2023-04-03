@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Cours } from '../Cours';
 import { User } from '../User';
+import {AuthService} from './auth-service.service';
 
 @Injectable({
   providedIn: 'root'
@@ -10,20 +11,38 @@ import { User } from '../User';
 export class CoursesServiceService {
   private url : string = 'http://localhost:5000/courses'
   private url2 : string = 'http://localhost:5000/users'
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient, private authService: AuthService) { }
 
   getCourses(): Observable<Cours[]> {
     return this.http.get<Cours[]>(this.url);
   }
 
+  public changeAuth(): void {
+    this.authService.isLoggedIn = !this.authService.isLoggedIn;
+
+  }
+
+  public get isLoggedIn(): boolean {
+    return this.authService.isLoggedIn;
+  }
+
+
+  login(email: string, password: string): Observable<User> {
+    const loginUrl = 'http://localhost:5000/login';
+     var x= this.http.post<User>(loginUrl, { email, password });
+    return x;
+  }
   
-  getCourse(id: string): Observable<Cours> {
-    return this.http.get<Cours>(this.url+"/"+id);
+  logout():void {
+    localStorage.setItem('isLoggedIn', 'false');
+  }
+  getCourse(_id: string): Observable<Cours> {
+    return this.http.get<Cours>(this.url+"/"+_id);
   }
 
   
   updateCourse(course: Cours): Observable<any> {
-    return this.http.put(this.url+"/"+course.id, course);
+    return this.http.put(this.url+"/"+course._id, course);
   }
 
   insertCourse(course: Cours): Observable<Cours> {
@@ -32,8 +51,8 @@ export class CoursesServiceService {
 
 
 
-  deleteCourse(id: number): Observable<Cours> {
-    const url = `${this.url}/${id}`;
+  deleteCourse(_id: string): Observable<Cours> {
+    const url = `${this.url}/${_id}`;
     return this.http.delete<Cours>(url);
   }
   

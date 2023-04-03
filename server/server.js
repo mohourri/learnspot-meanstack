@@ -1,103 +1,128 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const cors = require("cors");
+const CourseModel = require("./Course.model");
+const UserModel = require("./User.model");
 
 const app = express();
-const port = 5000;
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
 
-// Define the schema for the 'Cours' model
-const coursSchema = new mongoose.Schema({
-  id: Number,
-  name: String,
-  description: String,
-  category: String,
-  price: Number,
-});
-
-const Cours = mongoose.model("Cours", coursSchema);
-
-// Connect to MongoDB
 mongoose
-  .connect("mongodb://localhost:27017/courses", {
+  .connect("mongodb://127.0.0.1/courses", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
   .then(() => {
-    console.log("MongoDB connected");
-    app.listen(port, () => console.log(`Server started on port ${port}`));
+    console.log("Connected to MongoDB");
   })
   .catch((err) => {
-    console.log("Error connecting to MongoDB:", err.message);
-    process.exit(1);
+    console.error("Error connecting to MongoDB", err);
   });
 
-// Use bodyParser to parse incoming JSON requests
-app.use(bodyParser.json());
-
-// Define the routes for the API
 app.get("/courses", async (req, res) => {
   try {
-    const courses = await Cours.find();
-    res.json(courses);
+    const courses = await CourseModel.find();
+    res.send(courses);
   } catch (err) {
-    console.log("Error fetching courses:", err.message);
-    res.status(500).json({ error: "Error fetching courses" });
+    console.error(err);
+    res.status(500).send(err);
   }
 });
 
 app.get("/courses/:id", async (req, res) => {
   try {
-    const course = await Cours.findOne({ id: req.params.id });
-    if (!course) {
-      return res.status(404).json({ error: "Course not found" });
-    }
-    res.json(course);
+    const course = await CourseModel.findById(req.params.id);
+    console.log("this is our course:");
+    console.log(course);
+    res.send(course);
   } catch (err) {
-    console.log("Error fetching course:", err.message);
-    res.status(500).json({ error: "Error fetching course" });
+    console.error(err);
+    res.status(500).send(err);
   }
 });
 
 app.put("/courses/:id", async (req, res) => {
   try {
-    const course = await Cours.findOneAndUpdate(
-      { id: req.params.id },
-      req.body,
-      {
-        new: true,
-      }
-    );
-    if (!course) {
-      return res.status(404).json({ error: "Course not found" });
-    }
-    res.json(course);
+    const course = await CourseModel.findById(req.params.id);
+    course.title = req.body.title;
+    course.description = req.body.description;
+    course.author = req.body.author;
+    course.publishDate = req.body.publishDate;
+    await course.save();
+    res.send(course);
   } catch (err) {
-    console.log("Error updating course:", err.message);
-    res.status(500).json({ error: "Error updating course" });
+    console.error(err);
+    res.status(500).send(err);
   }
 });
 
 app.post("/courses", async (req, res) => {
   try {
-    const course = new Cours(req.body);
+    const course = new CourseModel({
+      title: req.body.title,
+      description: req.body.description,
+      author: req.body.author,
+      category: req.body.category,
+      duration: req.body.duration,
+      views: req.body.views,
+      chapters: req.body.chapters,
+    });
     await course.save();
-    res.json(course);
+    res.send(course);
   } catch (err) {
-    console.log("Error creating course:", err.message);
-    res.status(500).json({ error: "Error creating course" });
+    console.error(err);
+    res.status(500).send(err);
   }
 });
 
 app.delete("/courses/:id", async (req, res) => {
   try {
-    const course = await Cours.findOneAndDelete({ id: req.params.id });
-    if (!course) {
-      return res.status(404).json({ error: "Course not found" });
-    }
-    res.json(course);
+    const course = await CourseModel.findByIdAndDelete(req.params.id);
+    res.send(course);
   } catch (err) {
-    console.log("Error deleting course:", err.message);
-    res.status(500).json({ error: "Error deleting course" });
+    console.error(err);
+    res.status(500).send(err);
   }
 });
 
+app.post("/login", async (req, res) => {
+  try {
+    const user = await UserModel.findOne({
+      email: req.body.email,
+      password: req.body.password,
+    });
+    if (user) {
+      res.send(user);
+    } else {
+      res.status(401).send("Invalid email or password");
+    }
+  } catch (err) {
+    console.error(err);
+    res.status(500).send(err);
+  }
+});
+
+app.post("/users", async (req, res) => {
+  try {
+    const user = new UserModel({
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+      email: req.body.email,
+      gender: req.body.gender,
+      password: req.body.password,
+    });
+    await user.save();
+    res.send(user);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send(err);
+  }
+});
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server started on port ${PORT}`);
+});

@@ -1,6 +1,6 @@
 import {Chapter} from './Chapter'
 export interface Cours {
-    id?: number;
+    _id?: string;
     description: string;
     title: string;
     category: string;

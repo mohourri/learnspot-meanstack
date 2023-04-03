@@ -27,7 +27,11 @@ export class UpdateCourseFormComponent {
 
   getCourse(id: string): void {
     this.coursesService.getCourse(id)
-      .subscribe(course => this.course = course);
+      .subscribe(course => {
+        this.course = course
+        console.log("This is our course: ")
+        console.log(course)
+      });
   }
 
   updateCourse(): void {

@@ -4,7 +4,7 @@
       <h5 class="card-title">{{course.title}}</h5>
       <p class="card-text">{{course.category}}</p>
       <p class="card-text">By :<i> {{course.author.toUpperCase()}}</i></p>
-      <a [routerLink]="['/course', course.id]">{{ course.title }}</a>
+      <a [routerLink]="['/course', course._id]">{{ course.title }}</a>
       <app-button [routerLink]="['/course', course]" class="btn btn-primary" color="blue" text="View the course" color="blue" (click)="onClick(course)">Take the Cours</app-button>
     </div>
   </div>
