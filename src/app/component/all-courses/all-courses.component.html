@@ -9,12 +9,12 @@
             <div class="card h-100">
               <img src="https://www.springboard.com/blog/wp-content/uploads/2021/11/Refine-Your-Coding-Skills-1-scaled.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">{{ course.title }}</h5>
-                <p class="card-text">{{ course.description }}</p>
+                <b class="card-title">{{ course.title }}</b>
+                <p class="card-text">{{ course.category }}</p>
                 <p class="card-text"><small class="text-muted">{{ course.author }}</small></p>
               </div>
               <div class="card-footer">
-                <a [routerLink]="['/course', course._id]" class="btn btn-primary float-right">View Details</a>
+                <a [routerLink]="['/course', course._id]" class="btn btn-primary float-right">View Course</a>
               </div>
             </div>
           </div>

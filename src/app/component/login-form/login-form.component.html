@@ -1,18 +1,35 @@
 <div class="container">
-    <form>
+  <div class="row">
+    <div class="col-md-6 cont">
+      <h2>First of all, Connect Or Create your account !</h2>
+      <br>
+      <h5>Learnspot, Know more !</h5>
+      <p>Welcome to LearnSpot! Our platform offers a wide range of online courses designed to help you achieve your learning goals. Join our community of lifelong learners today!</p>
+      <img class="cover" src="https://media.istockphoto.com/id/1217975335/th/%E0%B9%80%E0%B8%A7%E0%B8%84%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C/%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%E0%B8%A7%E0%B8%B4%E0%B8%94%E0%B8%B5%E0%B9%82%E0%B8%AD%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B9%81%E0%B8%8A%E0%B8%97-e-learning-%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%8A%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99-%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B9%84%E0%B8%81%E0%B8%A5.jpg?s=170667a&w=0&k=20&c=1-x8c4-BRFav7YPlp4klOoErigk6Eh3oc0SNZRi5i9U=" alt="big image">
+    </div>
+    <div class="col-md-6">
+      <form (ngSubmit)="onSubmit()" #loginForm="ngForm" class="p-3 rounded shadow-sm">
+
+        <h2 class="text-center mb-3">Login</h2>
+
         <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="email" [(ngModel)]="email" name="email" placeholder="email">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" [(ngModel)]="email" name="email" placeholder="Enter email" required>
         </div>
+
         <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="password" placeholder="Password" [(ngModel)]="password" name="password">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" [(ngModel)]="password" name="password" placeholder="Password" required>
         </div>
-        <div>
-          <ng-container *ngIf="error">
-            <span class="red">{{error}}</span>
-          </ng-container>
+
+        <div *ngIf="error" class="alert alert-danger">{{ error }}</div>
+
+        <div class="text-center">
+          <button type="submit"   [disabled]="!loginForm.valid">Login</button><br>
+          <a routerLink="/register" class="btn btn-link mt-3">Create an account</a>
         </div>
-        <button type="submit" class="btn btn-primary" (click)="onSubmit()">Connect</button>
+
       </form>
+    </div>
+  </div>
 </div>

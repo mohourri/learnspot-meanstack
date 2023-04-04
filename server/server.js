@@ -35,8 +35,6 @@ app.get("/courses", async (req, res) => {
 app.get("/courses/:id", async (req, res) => {
   try {
     const course = await CourseModel.findById(req.params.id);
-    console.log("this is our course:");
-    console.log(course);
     res.send(course);
   } catch (err) {
     console.error(err);
@@ -50,7 +48,25 @@ app.put("/courses/:id", async (req, res) => {
     course.title = req.body.title;
     course.description = req.body.description;
     course.author = req.body.author;
-    course.publishDate = req.body.publishDate;
+    course.category = req.body.category;
+    course.duration = req.body.duration;
+    course.views = req.body.views;
+    course.chapters = req.body.chapters;
+
+    await course.save();
+    res.send(course);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send(err);
+  }
+});
+
+app.put("/course/increase_views", async (req, res) => {
+  try {
+    console.log("this is the view :" + course.views);
+    const course = await CourseModel.findById(req.params._id);
+    course.views = course.views + 1;
+    console.log("this is the view :" + course.views);
     await course.save();
     res.send(course);
   } catch (err) {

@@ -17,6 +17,7 @@ import { SpinnerComponent } from './component/spinner/spinner.component';
 import { RegisterComponent } from './component/register/register.component';
 import { AboutComponent } from './component/about/about.component';
 import { ContactComponent } from './component/contact/contact.component';
+import { ErrorComponent } from './component/error/error.component';
 
 const appRoutes: Routes =[
   {path:'',component: AllCoursesComponent},
@@ -46,7 +47,8 @@ const appRoutes: Routes =[
     LoginFormComponent,
     RegisterComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    ErrorComponent
   ],
   imports: [
     FormsModule,

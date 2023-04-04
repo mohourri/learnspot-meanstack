@@ -4,7 +4,7 @@
 </ng-container>
 <div class="container-fluid bg-light">
     <div class="container py-5">
-      <h1 class="display-4">{{ course.title }}</h1>
+      <h2>{{ course.title }}</h2>
       <p class="lead">{{ course.description }}</p>
       <p>Author: {{ course.author }}</p>
       <p>Duration: {{ course.duration }} hours</p>
@@ -20,7 +20,7 @@
         <div class=" mb-5">
 
           <div class="mt-5 " *ngFor="let chapter of course.chapters">
-            <h2>{{ chapter.title }}</h2>
+            <h3>{{ chapter.title }}</h3>
             <hr>
             <div [innerHTML]="chapter.content"></div>
           </div>

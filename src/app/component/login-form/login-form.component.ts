@@ -28,7 +28,11 @@ export class LoginFormComponent {
           this.coursesService.changeAuth();
           localStorage.setItem('isLoggedIn', 'true');
           this.authService.isLoggedIn= true;
-          this.router.navigate(['/']);
+          if(user.email == "admin@learnspot.com"){
+            this.router.navigate(['/admin']);
+          }else{
+            this.router.navigate(['/']);
+          }
         }
       },
       (error: any) => {

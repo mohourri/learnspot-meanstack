@@ -20,6 +20,8 @@ export class SelectedCourseComponent implements OnInit {
     this.courseService.getCourse(id!).subscribe((cours) => {
       this.course = cours;
     });
+    
+    this.courseService.increaseViews(id!).subscribe(() => {});
   }
   
 }

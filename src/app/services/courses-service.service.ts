@@ -40,6 +40,9 @@ export class CoursesServiceService {
     return this.http.get<Cours>(this.url+"/"+_id);
   }
 
+  increaseViews(_id: string):Observable<any>{
+    return this.http.put(this.url+"/course/increase_views/"+_id, _id);
+  }
   
   updateCourse(course: Cours): Observable<any> {
     return this.http.put(this.url+"/"+course._id, course);
