@@ -9,8 +9,8 @@ import {AuthService} from './auth-service.service';
   providedIn: 'root'
 })
 export class CoursesServiceService {
-  private url : string = 'http://localhost:5000/courses'
-  private url2 : string = 'http://localhost:5000/users'
+  private url : string = 'http://localhost:8088/courses'
+  private url2 : string = 'http://localhost:8088/users'
   constructor(private http:HttpClient, private authService: AuthService) { }
 
   getCourses(): Observable<Cours[]> {
@@ -28,24 +28,24 @@ export class CoursesServiceService {
 
 
   login(email: string, password: string): Observable<User> {
-    const loginUrl = 'http://localhost:5000/login';
-     var x= this.http.post<User>(loginUrl, { email, password });
+    const loginUrl = 'http://localhost:8088/login';
+     var x= this.http.post<User>(loginUrl, { "email":email, "password":password });
     return x;
   }
   
   logout():void {
     localStorage.setItem('isLoggedIn', 'false');
   }
-  getCourse(_id: string): Observable<Cours> {
-    return this.http.get<Cours>(this.url+"/"+_id);
+  getCourse(id_course: number): Observable<Cours> {
+    return this.http.get<Cours>(this.url+"/"+id_course);
   }
 
-  increaseViews(_id: string):Observable<any>{
-    return this.http.put(this.url+"/course/increase_views/"+_id, _id);
+  increaseViews(id_course: number):Observable<any>{
+    return this.http.put("http://localhost:8088/course/"+id_course, id_course);
   }
   
   updateCourse(course: Cours): Observable<any> {
-    return this.http.put(this.url+"/"+course._id, course);
+    return this.http.put(this.url+"/"+course.id_course, course);
   }
 
   insertCourse(course: Cours): Observable<Cours> {
@@ -54,8 +54,8 @@ export class CoursesServiceService {
 
 
 
-  deleteCourse(_id: string): Observable<Cours> {
-    const url = `${this.url}/${_id}`;
+  deleteCourse(id_course: number): Observable<Cours> {
+    const url = `${this.url}/${id_course}`;
     return this.http.delete<Cours>(url);
   }
   

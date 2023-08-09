@@ -23,20 +23,20 @@ export class AdminDashboardComponent implements OnInit {
   }
   
   editCourse(course: Cours): void {
-    this.router.navigate(['/course/update/'+course._id]);
+    this.router.navigate(['/course/update/'+course.id_course]);
   }
 
 
   deleteCourse(crs: Cours): void {
     if (confirm('Are you sure you want to delete this course?')) {
-      this.courseService.deleteCourse(crs._id!).subscribe(() => {
-        this.courses = this.courses.filter(course => course._id !== crs._id);
+      this.courseService.deleteCourse(crs.id_course!).subscribe(() => {
+        this.courses = this.courses.filter(course => course.id_course !== crs.id_course);
       });
     }
   }
 
   onCourseClick(course:Cours):void{
-    this.router.navigate(['/course/'+course._id]);
+    this.router.navigate(['/course/'+course.id_course]);
   }
   newCourseClick():void{
     this.router.navigate(['/courses/new_course']);

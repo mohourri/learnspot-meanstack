@@ -12,7 +12,7 @@ import { ActivatedRoute,Router  } from '@angular/router';
 export class UpdateCourseFormComponent {
 
   course!: Cours;
-  courseId!: string;
+  id_course!: number;
 
   constructor(
     private route: ActivatedRoute,
@@ -21,12 +21,12 @@ export class UpdateCourseFormComponent {
   ) { }
 
   ngOnInit(): void {
-    this.courseId = this.route.snapshot.params['id'];
-    this.getCourse(this.courseId);
+    this.id_course = this.route.snapshot.params['id'];
+    this.getCourse(this.id_course);
   }
 
-  getCourse(id: string): void {
-    this.coursesService.getCourse(id)
+  getCourse(id_course: number): void {
+    this.coursesService.getCourse(id_course)
       .subscribe(course => {
         this.course = course
         console.log("This is our course: ")

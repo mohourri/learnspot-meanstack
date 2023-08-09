@@ -16,12 +16,12 @@ export class SelectedCourseComponent implements OnInit {
   constructor(private route: ActivatedRoute, private courseService: CoursesServiceService) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    this.courseService.getCourse(id!).subscribe((cours) => {
+    const id_course: number = Number(this.route.snapshot.paramMap.get('id'));
+    this.courseService.getCourse(id_course!).subscribe((cours) => {
       this.course = cours;
     });
     
-    this.courseService.increaseViews(id!).subscribe(() => {});
+    this.courseService.increaseViews(id_course!).subscribe(() => {});
   }
   
 }

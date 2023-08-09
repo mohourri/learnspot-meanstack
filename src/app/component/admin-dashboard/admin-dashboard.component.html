@@ -4,7 +4,7 @@
 <table class="table">
     <thead>
       <tr>
-        <!--<th>ID</th>-->
+        <th>ID</th>
         <th>Title</th>
         <th>Category</th>
         <th>Author</th>
@@ -13,17 +13,15 @@
     </thead>
     <tbody>
       <tr *ngFor="let course of courses" >
-        <!--<td>{{ course._id }}</td>-->
-        <td><a (click)="onCourseClick(course)">{{ course.title }}</a></td>
-        <td>{{ course.category }}</td>
-        <td>{{ course.author }}</td>
+        <td>{{ course?.id_course }}</td>
+        <td><a (click)="onCourseClick(course)">{{ course?.title }}</a></td>
+        <td>{{ course?.category }}</td>
+        <td>{{ course?.author }}</td>
         <td>
-            <!-- Edit button with icon only -->
             <button class="btn btn-outline-secondary" (click)="editCourse(course)" aria-label="Edit">
                 <i class="fas fa-pencil-alt"></i>
             </button>
             
-            <!-- Delete button with icon only -->
             <button class="btn btn-outline-danger m-1" (click)="deleteCourse(course)" aria-label="Delete">
                 <i class="fas fa-trash-alt"></i>
             </button>

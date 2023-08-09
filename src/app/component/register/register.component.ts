@@ -33,7 +33,7 @@ export class RegisterComponent implements OnInit {
     this.user = this.userForm.value;
     this.coursesService.addUser(this.user)
         .subscribe(() => {
-          alert("The Course has been added !");
+          alert("The User has been added successfully !");
           this.router.navigate(['/'], { relativeTo: this.route });
       });
   }
